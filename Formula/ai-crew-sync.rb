@@ -1,0 +1,62 @@
+# Prebuilt binaries rather than a source build: the crate takes about ninety
+# seconds to compile, and `brew install` should not.
+class AiCrewSync < Formula
+  desc "MCP coordination bus for a team's AI coding agents"
+  homepage "https://github.com/joaquinbejar/ai-crew-sync"
+  version "0.5.1"
+  license "MIT"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.5.1/ai-crew-sync-v0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "0f37579a4734b51e0d475306ebb70f17c8d769985974791fc96807789426c0fa"
+    end
+    on_intel do
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.5.1/ai-crew-sync-v0.5.1-x86_64-apple-darwin.tar.gz"
+      sha256 "5577ff14d1c2680413ba06c2d76b1c459151419c4805418b627d527474246547"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.5.1/ai-crew-sync-v0.5.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "2ccb2d5e7268cf45b58dd1e5e85df7824937c9e1f75e98b5e10bf4cfbf7210bd"
+    end
+    on_intel do
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.5.1/ai-crew-sync-v0.5.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "6f44fff13cd775142f13483cce7de9afa51c8b917a460365159bf534417d0393"
+    end
+  end
+
+  def install
+    bin.install "ai-crew-sync"
+    doc.install "README.md", "LICENSE"
+    # The documented list of every configuration knob, with defaults.
+    pkgshare.install ".env.example"
+  end
+
+  def caveats
+    <<~EOS
+      This installs one binary that is the server, the operator CLI and the
+      console client.
+
+      To talk to a bus your team already runs:
+        export BUS_URL=https://bus.example.com/mcp
+        export BUS_TOKEN=acs_...        # from `ai-crew-sync agent add`
+        ai-crew-sync client whoami
+
+      To run a bus yourself you also need PostgreSQL 16 or newer. Most people
+      want the container image for that:
+        docker pull ghcr.io/joaquinbejar/ai-crew-sync
+
+      Every configuration knob, with its default:
+        #{opt_pkgshare}/.env.example
+    EOS
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/ai-crew-sync --version")
+    # The client refuses to run without a bus, and says so rather than hanging.
+    assert_match "BUS_TOKEN", shell_output("#{bin}/ai-crew-sync client whoami 2>&1", 2)
+  end
+end
