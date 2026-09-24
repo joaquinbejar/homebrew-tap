@@ -3,28 +3,28 @@
 class AiCrewSync < Formula
   desc "MCP coordination bus for a team's AI coding agents"
   homepage "https://github.com/joaquinbejar/ai-crew-sync"
-  version "0.7.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.0/ai-crew-sync-v0.7.0-aarch64-apple-darwin.tar.gz"
-      sha256 "87950bce3f47c44d4f831f990d5971e92af7f8f97735dbba56c36e4befdeff7a"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.1/ai-crew-sync-v0.7.1-aarch64-apple-darwin.tar.gz"
+      sha256 "75a8b1cef52d655e32ff0f7168b923ec3fdec3442f378aa9c79560e8a49b5f80"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.0/ai-crew-sync-v0.7.0-x86_64-apple-darwin.tar.gz"
-      sha256 "bdca525655e7e245422ec42f50c6730fd72955ceab991edc47a951a6d94eb53b"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.1/ai-crew-sync-v0.7.1-x86_64-apple-darwin.tar.gz"
+      sha256 "e57d36d8e286b117b330d5bffa9d96e69cdb7477d2954aef57d366ba6d61b263"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.0/ai-crew-sync-v0.7.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "2c97df240e14fb4fbb98780677a8bec94e0ded834710aa0c4450502511514005"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.1/ai-crew-sync-v0.7.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "3fd173e59a53bafcd7c9baaee52ef5da7aedf9a0bf2ad77ce5dbb371993659ea"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.0/ai-crew-sync-v0.7.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "af25156a9ca9b79ebb4042806ccc4bd996d37a4f5db9e547d4a32f8224341194"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.1/ai-crew-sync-v0.7.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "ecf44b181015437f81583845dc11ae7d2177823dac1b434e6675d71a3b2cabd6"
     end
   end
 
