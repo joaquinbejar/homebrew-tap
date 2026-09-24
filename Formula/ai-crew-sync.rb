@@ -9,22 +9,22 @@ class AiCrewSync < Formula
   on_macos do
     on_arm do
       url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.3/ai-crew-sync-v0.7.3-aarch64-apple-darwin.tar.gz"
-      sha256 "a40a25fad1c3437c408e71dba5d9e7867f08e3c523152f0c8cb03083effc546d"
+      sha256 "b2e090e4354bd46c8328216b5a804a4593234412aaa635cfc6bcfe343ce6441e"
     end
     on_intel do
       url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.3/ai-crew-sync-v0.7.3-x86_64-apple-darwin.tar.gz"
-      sha256 "940be78605d975bb208e235deedf857dea69730ec125705ca18cb74b13b1b74a"
+      sha256 "f99683629a0ce7138d16ce6b5a704e199f78b02c4295102c80192d7b40d60a7b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.3/ai-crew-sync-v0.7.3-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "6babe17f04172a5f3e5d71a7712711c2e53c2f299120d436ffd796e3f92107cb"
+      sha256 "b73b9d559e9dbfea33c8d5ee982aafe8256434e49b1cb9223f8b48dfad532603"
     end
     on_intel do
       url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.3/ai-crew-sync-v0.7.3-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "23f8d1885898b04a7975bb20c8b5178ed97c393378f9a4cf3e459c393f4b656f"
+      sha256 "78a4c704a8389f96a809a62c5025e28b1e2d97836c50d8dbfe16f2a2ce2310c2"
     end
   end
 
