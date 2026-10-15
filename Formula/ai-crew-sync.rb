@@ -3,28 +3,28 @@
 class AiCrewSync < Formula
   desc "MCP coordination bus for a team's AI coding agents"
   homepage "https://github.com/joaquinbejar/ai-crew-sync"
-  version "0.7.4"
+  version "0.7.5"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.4/ai-crew-sync-v0.7.4-aarch64-apple-darwin.tar.gz"
-      sha256 "62e2b7a273084290b2fba9156b832894e31939abd22b5ef4f7e9bf409e256ccf"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.5/ai-crew-sync-v0.7.5-aarch64-apple-darwin.tar.gz"
+      sha256 "285b2de07c09c035f141240e1a17e256f63efba653fd88d31724501923d77728"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.4/ai-crew-sync-v0.7.4-x86_64-apple-darwin.tar.gz"
-      sha256 "f6c3610442de025fc65a3f9b081caa9fcfb0fb14ff7471574e28895af2153fa9"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.5/ai-crew-sync-v0.7.5-x86_64-apple-darwin.tar.gz"
+      sha256 "4bd89654a68fbd30113712f9dba645cbf03fab740b3fcf6d401e2ae074852230"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.4/ai-crew-sync-v0.7.4-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "7a913d882e79237e6dfeceafaecdfa7e3e7aa3d34d22faffaee66473db0a2fbf"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.5/ai-crew-sync-v0.7.5-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "911e4e91b238d7fee5bcb4caca80fa26a952ba22293cf13579c315d49af8a393"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.4/ai-crew-sync-v0.7.4-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7735e3dfe44e244c0e3aeca60f4ed2084f43204472d1e6a3ce31257fbbdefc50"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.5/ai-crew-sync-v0.7.5-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "2e605bb1b60ad50020bcaa3f791ba49c711411c619dbc7906038c88a315fa128"
     end
   end
 
