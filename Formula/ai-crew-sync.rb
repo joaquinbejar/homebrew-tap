@@ -3,28 +3,28 @@
 class AiCrewSync < Formula
   desc "MCP coordination bus for a team's AI coding agents"
   homepage "https://github.com/joaquinbejar/ai-crew-sync"
-  version "0.7.6"
+  version "0.7.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.6/ai-crew-sync-v0.7.6-aarch64-apple-darwin.tar.gz"
-      sha256 "b530cbb069604d4fbeb4718e27400b3b3e2158acae4f8e97bfdedeb621cc6c6a"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.7/ai-crew-sync-v0.7.7-aarch64-apple-darwin.tar.gz"
+      sha256 "3e5223eef12fb02fc5986830ac9a2b726fd2567e0d1edaa6c573e29f49980956"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.6/ai-crew-sync-v0.7.6-x86_64-apple-darwin.tar.gz"
-      sha256 "9717f2cee139f000dd30ef240d0f437efbf43a0e64371bb3b80ab31eb989926d"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.7/ai-crew-sync-v0.7.7-x86_64-apple-darwin.tar.gz"
+      sha256 "c1777bed912c031b2fe2cde48e83c8591a15f7770431e228a9bdc514f55ae481"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.6/ai-crew-sync-v0.7.6-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f05e3fc0ab7d1554b62941a0d58012886509ec01a665a9dfc57b481070f52ed9"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.7/ai-crew-sync-v0.7.7-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "2c175b1bcd91132d402f93650236114840e97f55254cd9114ff867b3c0f7d257"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.6/ai-crew-sync-v0.7.6-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "04fbae44e5a7f87854fcae9df527aac2c31d9ae08d6532cf496c4a8095bf39ec"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.7/ai-crew-sync-v0.7.7-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "735cd264d459a95965e247908549013fb3240af5322b9e0d18f8fd6d17233020"
     end
   end
 
