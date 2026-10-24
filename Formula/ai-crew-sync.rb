@@ -3,28 +3,28 @@
 class AiCrewSync < Formula
   desc "MCP coordination bus for a team's AI coding agents"
   homepage "https://github.com/joaquinbejar/ai-crew-sync"
-  version "0.7.8"
+  version "0.7.9"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.8/ai-crew-sync-v0.7.8-aarch64-apple-darwin.tar.gz"
-      sha256 "99f80ee9385cfb4ad40eac17bcd4255b41999e7a86edae7a8e2f064b8030d84f"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.9/ai-crew-sync-v0.7.9-aarch64-apple-darwin.tar.gz"
+      sha256 "7bfdf5411e6355ed1f304a986508facca371a664840d7b8481c4ff2805cfdaa8"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.8/ai-crew-sync-v0.7.8-x86_64-apple-darwin.tar.gz"
-      sha256 "a9caaa4c1cba555b340171c13063c9988fd2045e0c23ab80d93eb05392ae1717"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.9/ai-crew-sync-v0.7.9-x86_64-apple-darwin.tar.gz"
+      sha256 "9eff3ed93cb758ff1f8791f14d4f4459a50b9b96f7fc7ee87d2d0ab3bcc446e1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.8/ai-crew-sync-v0.7.8-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "6ba2d43aac5a3fb7c4b40022eb5d4ef3914ba3c3e53440d82e1166ed7b0602b4"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.9/ai-crew-sync-v0.7.9-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "bec29956bef07d00b96c292f859b646e59c93e2400a550406fdccd3dd62a566c"
     end
     on_intel do
-      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.8/ai-crew-sync-v0.7.8-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "2eb45b90dae05562b3135168161822b0c844a74ba39c2279c5b381e1d8d18d01"
+      url "https://github.com/joaquinbejar/ai-crew-sync/releases/download/v0.7.9/ai-crew-sync-v0.7.9-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "680d3a84724a4b3959182234387e96619bf39d576229cf441d906b833dafbaa9"
     end
   end
 
