@@ -16,15 +16,17 @@ docker pull ghcr.io/joaquinbejar/ai-crew-sync
 
 The formula is updated automatically when a release is published.
 
+## Contribution and Contact
+
+### **Contact Information**
+- **Author**: Joaquín Béjar García
+- **Email**: jb@taunais.com
+- **Telegram**: [@joaquin_bejar](https://t.me/joaquin_bejar)
+- **Repository**: <https://github.com/joaquinbejar/homebrew-tap>
+
 <!-- related-projects:start -->
 ## Related projects
 
-Repositories by the same author that this project depends on, and repositories that depend on it.
-
-### Depends on
-
-| Repository | Description |
-|------------|-------------|
-| [ai-crew-sync](https://github.com/joaquinbejar/ai-crew-sync) · [crates.io](https://crates.io/crates/ai-crew-sync) | Coordination bus for teams of AI coding agents (messages, tasks, presence, locks) over one Postgres-backed server. *(Homebrew formula)* |
+No other repositories by the same author depend on this project, and it depends on none of them. See all of them at <https://github.com/joaquinbejar?tab=repositories>.
 
 <!-- related-projects:end -->
