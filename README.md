@@ -27,6 +27,12 @@ The formula is updated automatically when a release is published.
 <!-- related-projects:start -->
 ## Related projects
 
-No other repositories by the same author depend on this project, and it depends on none of them. See all of them at <https://github.com/joaquinbejar?tab=repositories>.
+Repositories by the same author that this project depends on, and repositories that depend on it.
+
+### Depends on
+
+| Repository | Description |
+|------------|-------------|
+| [ai-crew-sync](https://github.com/joaquinbejar/ai-crew-sync) | Shared coordination bus for teams of AI coding agents; the tap packages its CLI as a Homebrew formula. |
 
 <!-- related-projects:end -->
